@@ -11,7 +11,7 @@
 
 | 번호 | 폴더명 | 설명 | 코드 파일 |
 |------|--------|------|-----------|
-| 1 | [CP01_Simple_Structure](./CP01_Simple_Structure/) | 기본 입출력, 변수 선언 | `01_input_output.py`, `02_variable.py` |
+| 1 | [CP01_Simple-Structure](./CP01_Simple-Structure/) | 기본 입출력, 변수 선언 | `01_input_output.py`, `02_variable.py` |
 | 2 | [CP02_Linear-Structure](./CP02_Linear-Structure/) | 리스트, 스택, 큐 등 선형 자료구조 | `01_list_ops.py`, `02_stack_simulation.py` |
 | 3 | [CP03_Non-Linear-Structure](./CP03_Non-Linear-Structure/) | 트리, 그래프 등 비선형 자료구조 | `01_tree_traversal.py`, `02_graph_adjlist.py` |
 | 4 | [CP04_Lookup-Mapping](./CP04_Lookup-Mapping/) | 딕셔너리, 해시맵, set 등 탐색 기반 구조 | `01_dict_lookup.py`, `02_set_operations.py` |

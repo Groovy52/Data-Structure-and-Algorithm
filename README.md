@@ -3,8 +3,7 @@
 이 저장소는 **자료구조 및 알고리즘 문제**에 대해 공부한 이론과 구현 코드들을 폴더별로 정리한 공간입니다.  
 여러 자료들을 참고해 직접 정리했기 때문에 잘못된 정보가 있을 수 있습니다. 이 부분에 대해 자유롭게 의견주시면 감사하겠습니다!
 기본 구조부터 고급 탐색, 동적 계획법, 정렬까지 자료구조와 알고리즘에 대해 검색되는 거의 모든 범위에 대해 다룰 예정이며,
-**CP01~CP10** 챕터로 나뉘어 체계적으로 정리할 계획입니다.
-현재 모든 폴더 내용에 대한 코드는 구현해보았으나, CP03 폴더 외 나머지 내용들은 아직 정리가 완료되지 않았습니다;;ㅎㅎ
+**CP01~CP10** 챕터로 나뉘어 체계적으로 정리할 계획입니다. (아직 정리가 완료되지 않았습니다;;ㅎㅎ)
 
 ---
 
@@ -12,7 +11,7 @@
 
 | 번호 | 폴더명 | 설명 | 코드 파일 |
 |------|--------|------|-----------|
-| 1 | [CP01_Simple_Structure](./CP01_Simple_Structure/) | 기본 입출력, 변수 선언 | `01_input_output.py`, `02_variable.py` |
+| 1 | [CP01_Simple-Structure](./CP01_Simple-Structure/) | 기본 입출력, 변수 선언 | `01_input_output.py`, `02_variable.py` |
 | 2 | [CP02_Linear-Structure](./CP02_Linear-Structure/) | 리스트, 스택, 큐 등 선형 자료구조 | `01_list_ops.py`, `02_stack_simulation.py` |
 | 3 | [CP03_Non-Linear-Structure](./CP03_Non-Linear-Structure/) | 트리, 그래프 등 비선형 자료구조 | `01_tree_traversal.py`, `02_graph_adjlist.py` |
 | 4 | [CP04_Lookup-Mapping](./CP04_Lookup-Mapping/) | 딕셔너리, 해시맵, set 등 탐색 기반 구조 | `01_dict_lookup.py`, `02_set_operations.py` |

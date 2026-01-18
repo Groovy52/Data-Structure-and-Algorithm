@@ -4,21 +4,29 @@ Docstring for CP01-01_String > string_methods.py
 # Method 
 
 - strip() / strip(str): 문자열의 시작과 끝에 공백/문자 제거
+
 - split(구분문자): 구분문자를 기준으로 문자열을 구분하여 리스트의 개별 요소로 반환
   - "111,222,333"을 쉼표 ,로 구분하고 싶을 때, "111,222,333".split(",")하면
   - ["111", "222", "333"]을 반환
+
 - upper() / lower(): 문자열을 대문자로 / 소문자로 반환 
-- "".join(리스트): split과 반대역할을 하는 method, ["111","222","333"]을 "111,222,333"으로 반환하려면
+
+- "".join(리스트): split(), sorted()과 반대역할을 하는 method, ["111","222","333"]을 "111,222,333"으로 반환하려면
   - ",".join(["111","222","333"])으로 하면 됨.
+
 - replace('old','new'): old 문자열을 new 문자열로 교체
+
 - eval("문자열"): 문자열의 진위값 판별 => 출력값 : bool (True/ Flase)
+
 - find("문자열"): 처음 발견된 문자열의 인덱스 반환
 
-# Formating method
+- Formating method
 
-- % format
-- str.format()
-- f-string format
+  - % format
+  - str.format()
+  - f-string format
+
+- sorted("문자열"): 문자열을 오름차순으로 정렬해 리스트로 반환
 
 """
 
@@ -278,3 +286,18 @@ print("Hello, my name is {name} and I'm {age}".format(**whoami)) # "Hello, my na
 #   % f-string 예제
 # -----------------------------
 print(f"Hello, my name is {name} and I'm {age}")
+
+
+# -----------------------------
+#   sorted 함수 예제
+# -----------------------------
+
+"""
+sorted 함수 설명:
+- 문자열을 오름차순으로 정렬
+- 입력값: 문자열 => 출력값: 문자열 요소가 오름차순으로 정렬된 리스트
+"""
+
+# 문자열을 오름차순으로 정렬해 리스트로 반환
+strings = 'cbacbad'
+print(sorted(strings)) # ['a', 'a', 'b', 'b', 'c', 'c', 'd']

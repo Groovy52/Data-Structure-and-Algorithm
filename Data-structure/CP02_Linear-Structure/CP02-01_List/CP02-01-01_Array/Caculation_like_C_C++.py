@@ -1,10 +1,10 @@
 # Python VS C/C++
 """
 
-| Type code | C 언어 타입        | Python 타입 | 최소 크기 (byte) |
+| Type code | C 언어 타입         | Python 타입  | 최소 크기 (byte)  |
 |-----------|--------------------|-------------|------------------|
 | `b`       | signed char        | int         | 1                |
-| `c`       | char               | str (1자)   | 1                |
+| `c`       | char               | str         | 1                |
 | `h`       | short              | int         | 2                |
 | `i`       | int                | int         | 4                |
 | `l`       | long               | int         | 4                |

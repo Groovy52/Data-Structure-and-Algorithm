@@ -18,6 +18,32 @@ N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 �
 
 # 1) 
 
+N, K = map(int, input().split())
 
+def solution(num, kill):
+    from collections import deque
+
+    ori_q = deque(range(1, num + 1))
+
+    i = 1
+    josep = []
+    print('<', end='')
+    while ori_q:
+        n = ori_q.popleft()
+        if i % kill == 0:
+            josep.append(n)
+            if not ori_q:
+                print(n, end='')
+            else:
+                print(n, end=', ')
+        else:
+            ori_q.append(n)
+        i += 1
+    print('>', end='')
+        
+    return josep
+
+solution(N, K)
+    
 
 # code reference: 백준 11866 (실버 4) / 알고리즘 분류: 구현, 자료 구조, 큐

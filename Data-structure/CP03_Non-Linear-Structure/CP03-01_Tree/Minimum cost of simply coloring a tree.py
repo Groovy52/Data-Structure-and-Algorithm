@@ -34,4 +34,5 @@ def solution(tree, cost):
     
 print(min(solution(tree, cost)))
 
-# code reference: joonlab(1509)
+# 이 코드의 버그 찾기 0124
+# code reference: joonlab(1509) / 알고리즘 분류: 그래프이론, 그래프탐색, 이분그래프

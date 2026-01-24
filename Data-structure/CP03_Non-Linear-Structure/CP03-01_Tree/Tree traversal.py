@@ -42,4 +42,4 @@ def postorder(node):
 # print(result_in)
 # print(result_post)
 
-# code reference: BACKJOON ONLINE JUDGE(1991)
+# code reference: backjoon (1991) / 알고리즘 분류: 트리, 재귀

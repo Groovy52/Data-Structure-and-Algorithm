@@ -1,3 +1,4 @@
+# ============================= 1) 
 N = int(input())
 T = dict()
 for _ in range(N):
@@ -34,12 +35,82 @@ def postorder(node):
 
 
 # 반드시 선언 후 결과값 출력, 선언 x => 결과값: None
-# preorder('A')
-# inorder('A')
-# postorder('A')
+preorder('A')
+inorder('A')
+postorder('A')
 
-# print(result_pre)
-# print(result_in)
-# print(result_post)
+print(result_pre)
+print(result_in)
+print(result_post)
+
+
+# ============================= 2) 
+
+n = int(input())
+nodes = list(list(input().split()) for _ in range(n))
+
+tree = {}
+for p, l, r in nodes:
+    tree[p] = (l, r)
+
+def pre_order(node):
+    if node == '.':
+        return
+    print(node, end='')
+    pre_order(tree[node][0])
+    pre_order(tree[node][1])
+    
+def in_order(node):
+    if node == '.':
+        return
+    in_order(tree[node][0])
+    print(node, end='')
+    in_order(tree[node][1])
+
+def post_order(node):
+    if node == '.':
+        return
+    post_order(tree[node][0])
+    post_order(tree[node][1])
+    print(node, end='')
+    
+    
+pre_order('A')
+print()
+in_order('A')
+print()
+post_order('A')
+print()
+
+
+# ============================= 3) 
+n = int(input())
+nodes = list(list(input().split()) for _ in range(n))
+
+tree = {}
+
+for p, l, r in nodes:
+    tree[p] = (l, r)
+
+def pre_order(node):
+    if node == '.':
+        return ''
+    return node + pre_order(tree[node][0]) + pre_order(tree[node][1])
+    
+def in_order(node):
+    if node == '.':
+        return ''
+    return in_order(tree[node][0]) + node + in_order(tree[node][1])
+
+def post_order(node):
+    if node == '.':
+        return ''
+    return post_order(tree[node][0]) + post_order(tree[node][1]) + node
+    
+print(pre_order('A'))
+print(in_order('A'))
+print(post_order('A'))
+
+
 
 # code reference: backjoon (1991) / 알고리즘 분류: 트리, 재귀

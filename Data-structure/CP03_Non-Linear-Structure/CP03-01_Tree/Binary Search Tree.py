@@ -22,9 +22,9 @@ class BinarySearchTree:
             self._insert_iter(data) # 반복 
     
     # 재귀    
-    def _insert_rec(self, node, data):
+    def _insert_rec(self, node, data): 
         if not node:
-            node = Node(data)
+            node = Node(data) 
         else:
             if node.data > data:
                 # node의 left 가 차 있는 상태일 수 있으므로 
@@ -32,7 +32,7 @@ class BinarySearchTree:
                 node.left = self._insert_rec(node.left, data)
             else:
                 # left와 마찬가지로 기존 node.right와 현재 data를 비교하는 과정 필요
-                node.right = self._insert_rec(node.right, data)
+                node.right = self._insert_rec(node.right, data) 
             
         return node 
     

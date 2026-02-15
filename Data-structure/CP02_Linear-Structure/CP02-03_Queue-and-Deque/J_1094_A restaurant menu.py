@@ -87,4 +87,4 @@ for r in res:
         print(*r)
 
 
-# code reference: 준랩 1094 / 알고리즘 분류: 큐, 구현, 정렬
+# code reference: joonlab(1094) / 알고리즘 분류: 큐, 구현, 정렬

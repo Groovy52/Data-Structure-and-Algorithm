@@ -59,4 +59,4 @@ def solution(n, A, x):
     return ans
         
 
-# code ref: 백준 3273 (실버 3) / 알고리즘 분류: 정렬, 투 포인터(두 포인터)
+# code ref: backjoon(3273) / 알고리즘 분류: 정렬, 투 포인터(두 포인터)

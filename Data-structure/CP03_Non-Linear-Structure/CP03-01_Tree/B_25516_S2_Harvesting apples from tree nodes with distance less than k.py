@@ -1,3 +1,5 @@
+# 25516: 거리가 k이하인 트리 노드에서 사과 수확하기
+
 import sys
 sys.setrecursionlimit(10**6)
 
@@ -29,4 +31,4 @@ def dfs(u, depth, tree, target_depth, apples):
 print(solution(e, k, values))
 
 
-# code reference: joonlab(1583)
+# code reference: joonlab(1583) / backjoon(25516) / 알고리즘 분류: 그래프이론, 그래프탐색, 너비우선탐색, 깊이우선탐색, 트리

@@ -113,4 +113,4 @@ print(post_order('A'))
 
 
 
-# code reference: backjoon (1991) / 알고리즘 분류: 트리, 재귀
+# code reference: backjoon(1991) / 알고리즘 분류: 트리, 재귀

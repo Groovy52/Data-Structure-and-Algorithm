@@ -15,4 +15,4 @@ print(solution(A))
 
 
 
-# code ref: 1107 / 알고리즘 분류: 문자열, 구현
+# code ref: joonlab(1107) / 알고리즘 분류: 문자열, 구현

@@ -18,4 +18,4 @@ def solution(A):
     
 print(solution(A)) # bbC
 
-# code ref: joonlab(1076)
+# code ref: joonlab(1076) / 알고리즘 분류: 문자열, 구현

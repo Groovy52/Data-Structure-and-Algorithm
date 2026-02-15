@@ -1,5 +1,5 @@
 """
-요세푸스 문제 0
+11866: 요세푸스 문제 0
 
 문제
 요세푸스 문제는 다음과 같다.
@@ -46,4 +46,4 @@ def solution(num, kill):
 solution(N, K)
     
 
-# code reference: 백준 11866 (실버 4) / 알고리즘 분류: 구현, 자료 구조, 큐
+# code reference: backjoon(11866) / 알고리즘 분류: 구현, 자료 구조, 큐

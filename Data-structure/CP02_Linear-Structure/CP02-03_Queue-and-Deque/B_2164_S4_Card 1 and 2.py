@@ -1,5 +1,5 @@
 """
-카드 1
+2164: 카드 1
 
 문제
 N장의 카드가 있다. 각각의 카드는 차례로 1부터 N까지의 번호가 붙어 있으며, 
@@ -95,4 +95,4 @@ while len(q) > 1:
     q.append(q.popleft())
 print(*q)   
 
-# code reference: 백준 2164 (실버 4) / 알고리즘 분류: 자료 구조, 큐
+# code reference: backjoon (2164) (실버 4) / 알고리즘 분류: 자료 구조, 큐

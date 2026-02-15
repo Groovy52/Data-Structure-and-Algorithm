@@ -8,10 +8,10 @@ n개의 정점과 n - 1개의 간선으로 구성된 트리 T가 있다. 정점 
 참고로, 파이썬 언어로 제출할 때는 제한 사항에 있는 setrecursionlimit() 함수를 사용하자.
 """
 
+# 1)
 import sys
 sys.setrecursionlimit(10**6)
 
-# 1)
 n, k = map(int, input().split())
 edges = list(list(map(int, input().split())) for _ in range(n-1))
 A = list(map(int, input().split()))
@@ -23,12 +23,12 @@ def solution(n, k, edges, A):
     
     return solve(0, 0, E, A, k)
     
-def solve(u, d, E, A, k):
-    if A[u] == k:
-        return d
+def solve(curr_n, curr_d, E, A, k):
+    if A[curr_n] == k:
+        return curr_d
     
-    for v in E[u]:
-        ret = solve(v, d+1, E, A, k)
+    for v in E[curr_n]:
+        ret = solve(v, curr_d + 1, E, A, k)
         if ret != -1:
             return ret
     
@@ -38,6 +38,9 @@ print(solution(n, k, edges, A))
 
 
 # 2)
+import sys
+sys.setrecursionlimit(10**6)
+
 n, k = map(int, input().split())
 tree = [[] for _ in range(n)]
 for _ in range(n - 1):

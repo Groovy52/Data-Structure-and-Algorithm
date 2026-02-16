@@ -47,7 +47,6 @@ for _ in range(n - 1):
     p, c = map(int, input().split())
     tree[p].append(c)
 values = list(map(int, input().split()))
-answer = -1 
 
 def solution(tree, values, k):
     global answer

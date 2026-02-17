@@ -42,6 +42,7 @@ class BinarySearchTree:
         if not self.__root:
             self.__root = Node(data)
             return 
+        
         # create new node
         new_node = Node(data) # 아직 어느 위치에 붙일지 모르니까 연결은 나중에 함.
         

@@ -37,4 +37,4 @@ for r in range(5):
             
 print(get_move_cnt(board, sr, sc, tr, tc))
 
-# code ref: joonlab(1533) / 알고리즘 분류: 그래프이론, 그래프탐색, 너비우선탐색
+# code ref: joonlab(1533) / Backjoon(25416) / 알고리즘 분류: 그래프이론, 그래프탐색, 너비우선탐색

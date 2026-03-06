@@ -36,3 +36,31 @@ def solution(n):
         return count
     
 solution(3)
+
+
+# 1) 
+n = int(input())
+
+def solve(A, n):
+    m = len(A)
+
+    if m==n:
+        return 1 
+    
+    if m==0:
+        s, e = 1,9
+    
+    else:
+        s = max(A[m-1]-2, 1)
+        e = min(A[m-1]+2, 9)
+
+    ret = 0
+    for a in range(s, e+1):
+        A.append(a)
+        ret += solve(A, n)
+        A.pop()
+    
+    return ret
+
+
+print(solve([],n))

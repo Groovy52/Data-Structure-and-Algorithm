@@ -1,4 +1,4 @@
-# 1533: 빠른 숫자 탐색
+# 25416: 빠른 숫자 탐색
 
 from collections import deque 
 

@@ -9,7 +9,8 @@ for _ in range(M):
     
 for i in range(1, N+1):
     adj[i].sort()
-    
+
+# dfs =>
 dfs_visited = [False]*(N+1)
 dfs_result = []
 
@@ -21,6 +22,7 @@ def dfs(v):
         if not dfs_visited[nxt]:
             dfs(nxt)
 
+# bfs =>
 from collections import deque
 
 bfs_visited = [False]*(N+1)

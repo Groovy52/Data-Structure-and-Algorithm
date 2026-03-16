@@ -53,6 +53,7 @@ else:
 
 print(xyz)
 
+
 # 시간 초과 2
 import heapq
 
@@ -99,6 +100,7 @@ else:
     print(xy+yz, end = ' ')
 
 print(xyz)
+
 
 # 에러 해결 코드
 import sys
@@ -158,5 +160,6 @@ else:
     ans1 = xy + yz
 
 sys.stdout.write(f"{ans1} {xyz}\n")
+
 
 # code ref: backjoon(23793) / 알고리즘 분류: 그래프 이론, 최단 경로, 데이크스트라

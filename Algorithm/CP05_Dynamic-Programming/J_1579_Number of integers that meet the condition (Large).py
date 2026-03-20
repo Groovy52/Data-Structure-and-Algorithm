@@ -11,7 +11,7 @@ def solution(n):
             s = max(j - 2, 1)
             e = min(j + 2, 9)
 
-            for k in range(1, 10):
+            for k in range(s, e + 1):
                 dp[i][j] += dp[i - 1][k]
             
             dp[i][j] %= 987654321 

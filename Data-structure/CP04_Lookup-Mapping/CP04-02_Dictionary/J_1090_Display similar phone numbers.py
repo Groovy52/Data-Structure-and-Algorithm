@@ -26,24 +26,60 @@ B를 접두사로 갖는 전화번호의 개수를 출력한다.
 3
 """
 
-s = list(input().split())
-T = input().strip()
+# 1) 잘못된 코드
+A = input().split()
+B = input().strip()
 
-def solution(A, B):
+def solution(s, T):
     vdict = dict()
     for num in s:
         vdict[num] = [num[:i] for i in range(len(num))]
-    
-    return vdict
-    
-V = solution(s, T)
+    print(vdict)
+    ans = 0
+    for k, v in vdict.items():
+        if T in v: 
+            ans += 1
+    return ans 
+
+print(solution(A, B))
+
+# 2) 
+A = input().split()
+B = input().strip()
+
+freq = dict()
+for num in A:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
 
 ans = 0
-for k, v in V.items():
-    if T in v:
-        ans += 1
+for num, cnt in freq.items():
+    if num != B and num.startswith(B):
+        ans += cnt  
 
 print(ans)
 
+# 3) 모든 테케 확인해보기!!!
+A = input().split()
+B = input().strip()
 
-# code ref: joonlab(1090) / backjoon(26041) (x) / 알고리즘 분류: 딕셔너리, 맵, 문자열, 구현
+def solution(A, B):
+    D = {}
+    for number in A:
+        for i in range(len(number)-1):
+            num = number[:i+1]
+            if num in D:
+                D[num] += 1
+            else:
+                D[num] = 1 
+    if B in D:
+        return D[B]
+    else:
+        return 0
+
+print(solution(A, B))
+
+
+# code ref: joonlab(1090) / backjoon(26041) / 알고리즘 분류: 딕셔너리, 맵, 문자열, 구현

@@ -26,6 +26,7 @@ ccc
 fff
 """
 
+# 1) 
 A = input().split()
 B = input().split()
 
@@ -41,11 +42,27 @@ def solution(A, B):
     for a in A:
         if not a in bdict:
             answer.append(a)
+
     answer.sort()
+
     return answer
 
 for ans in solution(A, B):
     print(ans)
 
+# 2) 
+A = input().split()
+B = input().split()
+
+D = dict()
+for b in B:
+    if b not in D:
+        D[b] = 1
+    else:
+        D[b] += 1
+A.sort()
+for a in A:
+    if a not in D:
+        print(a)
 
 # code ref: 딕셔너리, 맵, 문자열, 구현, 정렬

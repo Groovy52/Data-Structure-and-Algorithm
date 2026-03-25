@@ -18,6 +18,7 @@ def solution(s, e):
             return visited[x]
         
         for nx in (x-1, x+1, 2*x):
+            # 꼭 범위 체크 먼저! 방문 체크는 나중에
             if 0 <= nx < maxt and visited[nx]==-1:
                 visited[nx] = visited[x] + 1
                 q.append(nx)
@@ -43,6 +44,7 @@ def solution(s, e):
             return visited[x]
         
         for nx in (x-1, x+1, 2*x):
+            # 꼭 범위 체크 먼저! 방문 체크는 나중에
             if 0 <= nx < maxt and visited[nx]==-1:
                 visited[nx] = visited[x] + 1
                 q.append(nx)
